@@ -15,3 +15,8 @@ async function buscarCidade(cidade) {
     colocarDadosnatela(dados);
 }
 
+function cliqueinoBotao() {
+    const input = document.querySelector(".input-cidade").value;
+    
+    buscarCidade(input); // Corrigido para passar 'input' como argumento
+}
